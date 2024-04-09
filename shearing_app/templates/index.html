@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome</h1>
+    <h2>click one of titles to view text</h2>
+    {% for i in text %}
+    <li>
+        <a href="{% url 'url' i.urls %}"> {{ i.title }} </a>
+    </li>
+    {% endfor %}
+</body>
+</html>
